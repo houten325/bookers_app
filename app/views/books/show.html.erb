@@ -5,16 +5,16 @@
 <% end %>
 
 
-<p><strong>Title</strong>
+<p><strong>Title:</strong>
 <%= @books.title %>
 </p>
 
-<p><strong>Body</strong>
+<p><strong>Body:</strong>
 <%= @books.body %>
 </p>
 
-<%= link_to "Edit:", edit_books_path(@books.id) %>
+<%= link_to "Edit", edit_books_path(@books.id) %>
 
 |
 
-<%= link_to "Back:", books_path %>
+<%= link_to "Back", books_path %>
