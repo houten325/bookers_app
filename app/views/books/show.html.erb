@@ -1,3 +1,4 @@
+<main>
 <% if flash[:notice] %>
  <div class="notice">
    <%= flash[:notice] %>
@@ -13,8 +14,9 @@
 <%= @books.body %>
 </p>
 
-<%= link_to "Edit", edit_books_path(@books.id) %>
+<%= link_to "Edit", edit_book_path(@books) %>
 
 |
 
 <%= link_to "Back", books_path %>
+</main>

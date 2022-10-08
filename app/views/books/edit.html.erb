@@ -1,7 +1,8 @@
+<main>
 <h1>Editing Book</h1>
 
 
-<%= form_with model:  @book, url: update_books_path(@book), method: :patch do |f| %>
+<%= form_with model:  @book, url: book_path(@book), method: :patch do |f| %>
 <% if @book.errors.any? %>
   <%= @book.errors.count %>errors prohibited this book from being saved:
   <ul>
@@ -19,10 +20,11 @@
 
  <p><%= f.submit 'Update Book' %></p>
 
- <%= link_to "Show", show_books_path(@book) %>
+ <%= link_to "Show", book_path(@book) %>
 
  |
 
  <%= link_to "Back", books_path %>
 
 <% end %>
+</main
